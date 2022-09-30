@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
+    <v-col cols="12" sm="8" md="6" v-if="!loading">
       <v-card class="logo py-4 d-flex justify-center">
         <NuxtLogo />
         <VuetifyLogo />
@@ -72,15 +72,28 @@
           </v-btn>
         </v-card-actions>
       </v-card>
-    </v-col>
     <figure >
       <img src="/images/home/people.webp" alt="left com" loading="lazy" width="100%" height="100%"  />
     </figure>
+    </v-col>
+    <h3 v-if="loading">Loading....</h3>
   </v-row>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  data(){
+    return{
+      loading:true
+    }
+  },
+mounted(){
+  document.addEventListener('DOMContentLoaded',()=>{
+    console.log('is loaded');
+    this.loading = false
+  })
+}
 }
 </script>
+
