@@ -73,6 +73,9 @@
         </v-card-actions>
       </v-card>
     </v-col>
+    <figure >
+      <img src="/images/home/people.webp" alt="left com" loading="lazy" width="100%" height="100%"  />
+    </figure>
   </v-row>
 </template>
 
