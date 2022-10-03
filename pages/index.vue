@@ -77,15 +77,18 @@
     </figure>
     </v-col>
     <h3 v-if="loading">Loading....</h3>
+    <v-icon>{{ svgPath }}</v-icon>
   </v-row>
 </template>
 
 <script>
+import { mdiAccount } from '@mdi/js'
 export default {
   name: 'IndexPage',
   data(){
     return{
-      loading:true
+      loading:true,
+      svgPath: mdiAccount
     }
   },
 mounted(){

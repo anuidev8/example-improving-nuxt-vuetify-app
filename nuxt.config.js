@@ -57,6 +57,13 @@ export default {
           success: colors.green.accent3
         }
       }
+    },
+    icons: {
+      iconfont: 'mdiSvg',  // --> this should be enough
+
+      // sideNote: you can also define custom values and have access to them
+      // from your app and get rid of the imports in each component
+
     }
   },
 
