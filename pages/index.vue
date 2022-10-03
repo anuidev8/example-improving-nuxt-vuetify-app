@@ -74,6 +74,7 @@
       </v-card>
     <figure >
       <img src="/images/home/people.webp" alt="left com" loading="lazy" width="100%" height="100%"  />
+      <img :src="require('@/assets/images/home/people.webp')" alt="left com" loading="lazy" width="100%" height="100%"  />
     </figure>
     </v-col>
     <h3 v-if="loading">Loading....</h3>
