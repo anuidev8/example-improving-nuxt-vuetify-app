@@ -2,6 +2,9 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  image:{
+    dir: 'assets/images'
+  },
   head: {
     titleTemplate: '%s - performance-web',
     title: 'performance-web',
@@ -34,10 +37,12 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+     '@nuxt/image'
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
