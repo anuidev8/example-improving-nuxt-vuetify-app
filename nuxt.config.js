@@ -41,7 +41,7 @@ export default {
   ],
   purgeCSS: {
     // your settings here
-    mode: MODES.postcss,
+    mode: 'postcss',
     enabled: ({ isDev, isClient }) => (!isDev && isClient), // or `false` when in dev/debug mode
     paths: [
       'components/**/*.vue',
