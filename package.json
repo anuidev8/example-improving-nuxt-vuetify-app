@@ -20,6 +20,7 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "@nuxt/image": "^0.7.1",
     "@nuxtjs/vuetify": "^1.12.3"
   }
