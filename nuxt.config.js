@@ -38,6 +38,10 @@ export default {
     '@nuxt/image'
 
   ],
+  image: {
+    provider:"static",
+
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
 
