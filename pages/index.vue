@@ -74,7 +74,7 @@
       </v-card>
     <figure >
 
-       <nuxt-img format="webp" loading="lazy" src="home/people.webp" sizes="xs:100vw sm:370px  md:50vw lg:30vw"  alt="reemper"  />
+       <nuxt-img format="webp" loading="lazy" src="images/home/people.webp" sizes="xs:100vw sm:370px  md:50vw lg:30vw"  alt="reemper"  />
       <img :src="require('@/assets/images/home/people.webp')" alt="left com" loading="lazy" width="100%" height="100%"  />
     </figure>
     </v-col>
